@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+html {
+  scroll-behavior: smooth;
+}
+.options-btns {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  z-index: 1;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+.options-btn {
+  margin: 20px;
+  padding: 18px;
+  border: none;
+  color: whitesmoke;
+  background-color: #dc3545;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 400;
+  transition: all 0.3s ease-in-out;
+}
+.options-btn:hover {
+  cursor: pointer;
+  background-color: #db5c69;
+}
+
+.btn {
+  color: whitesmoke;
+  background-color: #007bff;
+  font-size: 20px;
+  font-weight: 500;
+  flex-grow: 1;
+  border: none;
+  height: 100%;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.send {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 40px;
+}
+input[type="text"]::placeholder {
+  padding-left: 15px;
+}
+.input-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 40px;
+}
+.textarea {
+  flex-grow: 4;
+  height: 100%;
+}
+.chat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.messages {
+  margin-top: 100px;
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw);
+  height: 100vh;
+}
+
+.message {
+  width: 90%;
+  height: 40px;
+  background-color: rgb(112, 121, 255);
+  margin-top: 20px;
+  font-size: 17px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: aliceblue;
+  padding-left: 15px;
+}
+
+.message strong {
+  padding-right: 10px;
+}
+.connectionInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(33, 29, 58);
+  font-size: 70px;
+  font-weight: 200;
+  text-transform: uppercase;
+}

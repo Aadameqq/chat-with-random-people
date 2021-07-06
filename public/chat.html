@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/chat.css" />
+  </head>
+  <body>
+    <div class="options-btns">
+      <div class="options-btn" style="display: none" id="leave-button">
+        Wyjdź
+      </div>
+      <div class="options-btn" style="display: none" id="new-room-button">
+        Znajdź nowy pokój
+      </div>
+    </div>
+
+    <div class="connectionInfo">
+      <div>Poczekaj aż ktoś do ciebie dołączy</div>
+    </div>
+    <div class="container">
+      <div class="chat" style="display: none">
+        <form class="send">
+          <span class="input-holder">
+            <input
+              type="text"
+              class="textarea"
+              id="message"
+              placeholder="Wiadomość"
+            />
+            <input type="submit" class="btn" id="submit" />
+          </span>
+        </form>
+      </div>
+    </div>
+    <div class="messages" style="display: none"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+  </body>
+</html>
